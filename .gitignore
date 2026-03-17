@@ -1,0 +1,17 @@
+/*
+/*/
+
+!.gitignore
+!README.md
+
+!hypr/
+!hypr/**
+
+!waybar/
+!waybar/**
+
+!rofi/
+!rofi/**
+
+!install/
+!install/**

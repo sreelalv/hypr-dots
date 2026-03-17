@@ -1,0 +1,117 @@
+{
+    "position": "top",
+    "margin-top": 5,
+    "modules-center": [
+        "clock"
+    ],
+    "modules-left": [
+        "hyprland/workspaces",
+        "cpu",
+        "memory"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "battery"
+    ],
+    "clock": {
+        "interval": 10,
+        "format": "{:%H:%M}",
+        "max-length": 25
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 10,
+        "format": "{used:0.1f}G "
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "active": "",
+            "default": "",
+            "urgent": ""
+        },
+        "max-length": 10
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}% ",
+        "format-bluetooth": "{icon} {volume}%  ",
+        "format-muted": " ",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ],
+	"ignored-sources": ["Easy Effects Sink"]
+    },
+    "network": {
+        "interval": 1,
+        "interface": "wlan0",
+        "format": "{ifname}",
+        "format-wifi": " ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+        "format-ethernet": " ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+        "format-disconnected": "󰤫  Disconnected", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 20
+    },
+    "battery": {
+        "bat": "BAT1",
+        "interval": 60,
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "default": [
+                "󰂎",
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ],
+            "charging": [
+                "󰢟",
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ]
+        }
+    }
+}
