@@ -1,4 +1,4 @@
-@define-color bg0 #333842; 
+@define-color bg0 #293847;
 
 * {
     all: unset;
@@ -15,19 +15,24 @@
     margin-right: 10px;
 }
 
-.modules-center {
-    background-color: @bg0;
-    padding: 2px 20px;
-    border-radius: 100px;
-}
-
-
 #cpu,
 #memory {
     background-color: @bg0;
     padding: 2px 20px;
     border-radius: 100px;
     margin: 0 5px;
+}
+
+#clock,
+#tray {
+    background-color: @bg0;
+    padding: 2px 20px;
+    border-radius: 100px;
+    margin: 0 5px;
+}
+
+#tray>.needs-attention {
+    background-color: red;
 }
 
 #workspaces {
@@ -61,6 +66,7 @@
 
 #pulseaudio,
 #network,
+#backlight,
 #battery {
     margin: 0 5px;
     background-color: @bg0;
