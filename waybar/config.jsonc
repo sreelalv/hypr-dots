@@ -2,7 +2,8 @@
     "position": "top",
     "margin-top": 5,
     "modules-center": [
-        "clock"
+        "clock",
+				"custom/dnd"
     ],
     "modules-left": [
         "hyprland/workspaces",
@@ -21,6 +22,12 @@
         "format": "{:%H:%M}",
         "max-length": 25
     },
+		"custom/dnd": {
+				"exec": "~/.config/waybar/scripts/dnd.sh",
+				"interval": 2,
+				"return-type": "json",
+				"on-click": "swaync-client -d"
+		},
     "tray": {
         "interval": 1,
         "icon-size": 12,
