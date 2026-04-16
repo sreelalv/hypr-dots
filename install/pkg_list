@@ -1,4 +1,3 @@
-
 acpi
 adobe-source-code-pro-fonts
 aria2
@@ -23,6 +22,7 @@ rofi
 rofi-emoji
 rsync
 spotify
+swaync
 thunar
 tree
 ttf-droid
@@ -34,3 +34,4 @@ ttf-victor-mono
 vesktop 
 vim
 waybar
+zenity

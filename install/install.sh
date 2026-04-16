@@ -61,5 +61,8 @@ mv "$_path/.gitignore" "$HOME/.config/.gitignore"
 
 rm -rf "$_path"
 
+git clone https://github.com/sreelalv/hypr-wallpapers $HOME/Pictures/hypr-wallpapers
+$HOME/.config/hypr/scripts/wallpaper.sh
+
 hyprctl reload && ((hyprpaper >/dev/null 2>&1)&) && ((waybar >/dev/null 2>&1)&)
 
