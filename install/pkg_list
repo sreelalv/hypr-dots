@@ -6,6 +6,7 @@ bluez
 bluez-utils
 brave-bin
 brightnessctl
+discord 
 expect
 git
 hyprlock
@@ -31,7 +32,6 @@ ttf-fira-code
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-victor-mono
-vesktop 
 vim
 waybar
 zenity
