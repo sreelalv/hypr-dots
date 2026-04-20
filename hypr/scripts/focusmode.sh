@@ -26,7 +26,7 @@ f_mod(){
 	wait "$sl_pid"
 
 	swaync-client -df
-	notify-send "DND OFF"
+	notify-send "TIMEUP!"
 	paplay 	"/usr/share/sounds/freedesktop/stereo/message.oga"
 	
 }
